@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: repeat-x;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 600px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em;
+  text-align: center;
+}
+.card__title {
+  padding: 0.8em;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+.card__text {
+  color: hsl(224, 23%, 55%);
+  line-height: 25px;
+}
+.card__plan {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1em 0;
+  padding: 0.5em;
+  background-color: hsl(226, 85%, 95%);
+  border-radius: 15px;
+}
+.card__plan-icon {
+  margin: 0.5em 1em;
+}
+.card__details {
+  position: absolute;
+  left: 20%;
+  margin: 0.5em 1em;
+  text-align: justify;
+}
+.card__plan-title {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+.card__plan-price {
+  color: hsl(224, 23%, 55%);
+}
+.card__plan-edit {
+  padding-right: 1em;
+  color: hsl(245, 75%, 52%);
+  transition: color 0.3s;
+}
+.card__plan-edit:hover {
+  color: hsl(245, 79%, 67%);
+  cursor: pointer;
+}
+.card__btn {
+  width: 100%;
+  padding: 1em 0.1em;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  background: none;
+}
+.card__btn--approve {
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 94%);
+  box-shadow: hsl(245, 75%, 52%) 0px 25px 20px -20px;
+  transition: background-color 0.3s;
+}
+.card__btn--approve:hover {
+  background-color: hsl(245, 79%, 67%);
+  cursor: pointer;
+}
+.card__btn--cancel {
+  color: hsl(224, 23%, 55%);
+  transition: color 0.3s;
+}
+.card__btn--cancel:hover {
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
+
+@media (min-width: 375px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+  }
+}/*# sourceMappingURL=main.css.map */
