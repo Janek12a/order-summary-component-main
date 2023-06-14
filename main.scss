@@ -4,6 +4,10 @@
 	margin: 0;
 }
 
+:root{
+    
+}
+
 body {
 	position: relative;
 	min-height: 100vh;
@@ -31,7 +35,8 @@ body {
 	&__img {
 		// height: 30%;
 		object-fit: cover;
-		object-position: center;
+		object-position: 80% 100%;;
+        
 	}
 
 	&__info {
